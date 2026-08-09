@@ -1,0 +1,11 @@
+{
+  "name": "random asset repository",
+  "install": "python3 .cursor/build_gallery.py",
+  "terminals": [
+    {
+      "name": "asset-preview",
+      "command": "python3 .cursor/build_gallery.py && python3 -m http.server 8000"
+    }
+  ],
+  "ports": [8000]
+}
